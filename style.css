@@ -5,9 +5,6 @@ body, html {
     height: 100%;
     font-family: 'Roboto', sans-serif; /* A common, clean font */
     background-color: #3f51b5; /* Primary blue color (similar to image) */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
 }
 
 /* Login Container - The main wrapper for centering */
@@ -22,7 +19,7 @@ body, html {
 /* Login Form Box - The white box in the center */
 .login-form {
     background-color: white;
-    padding: 40px 30px;
+    padding: 40px 30px 40px 30px;
     border-radius: 8px; /* Slightly rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     width: 90%; /* On smaller screens */
@@ -42,7 +39,7 @@ body, html {
 }
 
 /* School Name Styling */
-h1 {
+.login-frm h1 {
     font-size: 1.5em;
     color: #333;
     margin-top: 0;
@@ -57,7 +54,7 @@ h1 {
 
 input[type="text"], 
 input[type="password"] {
-    width: calc(100% - 20px); /* Full width minus padding */
+    width:  100%; /* Full width minus padding */
     padding: 12px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
