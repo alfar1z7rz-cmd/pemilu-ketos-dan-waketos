@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="id"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMKS Al Hikam Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Login | SMKS Al Hikam</title> <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="login-container">
-        <div class="login-form">
-            <div class="logo-placeholder">
-                <img src="logo-smks-al-hikam.png" alt="SMKS Al Hikam Logo">
+        <form class="login-form" action="/submit-login" method="POST"> <div class="logo-placeholder">
+                <img src="logo-smks-al-hikam.png" alt="Logo SMKS Al Hikam">
             </div>
             
-            <h1>SMKS AL HIKAM</h1>
+            <h1 class="form-title">Sistem Informasi SMKS AL HIKAM</h1> <div class="input-group">
+                <label for="username" class="sr-only">Nama Pengguna</label> 
+                <input 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    placeholder="Nama Pengguna" required
+                >
+            </div>
+            <div class="input-group">
+                <label for="password" class="sr-only">Kata Sandi</label> 
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="Kata Sandi" required
+                >
+            </div>
+            <button type="submit" class="login-btn">
+                MASUK
+            </button>
             
-            <form action="#" method="POST">
-                <div class="input-group">
-                    <input type="text" id="username" name="username" placeholder="user name" required>
-                </div>
-                <div class="input-group">
-                    <input type="password" id="password" name="password" placeholder="paswort" required>
-                </div>
-                <button type="submit" class="login-btn">LOGIN</button>
-            </form>
-        </div>
+        </form>
     </div>
 </body>
 </html>
