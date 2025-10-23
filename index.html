@@ -1,34 +1,45 @@
 <!DOCTYPE html>
-<html lang="id"> <head>
+<html lang="id">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | SMKS Al Hikam</title> <link rel="stylesheet" href="styles.css">
+    <title>Login | SMKS Al Hikam</title>
+    <link rel="stylesheet" href="styles.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="login-container">
-        <form class="login-form" action="/submit-login" method="POST"> <div class="logo-placeholder">
+        <form class="login-form" action="/submit-login" method="POST">
+            <div class="logo-placeholder">
                 <img src="logo-smks-al-hikam.png" alt="Logo SMKS Al Hikam">
             </div>
             
-            <h1 class="form-title">Sistem Informasi SMKS AL HIKAM</h1> <div class="input-group">
-                <label for="username" class="sr-only">Nama Pengguna</label> 
-                <input 
-                    type="text" 
-                    id="username" 
-                    name="username" 
-                    placeholder="Nama Pengguna" required
-                >
-            </div>
+            <h1 class="form-title">Sistem Informasi SMKS AL HIKAM</h1>
+            
             <div class="input-group">
-                <label for="password" class="sr-only">Kata Sandi</label> 
-                <input 
-                    type="password" 
-                    id="password" 
-                    name="password" 
-                    placeholder="Kata Sandi" required
+                <label for="username">Nama Pengguna</label> 
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Masukkan Nama Pengguna"
+                    required
+                    autocomplete="username"
                 >
             </div>
+            
+            <div class="input-group">
+                <label for="password">Kata Sandi</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Masukkan Kata Sandi"
+                    required
+                    autocomplete="current-password"
+                >
+            </div>
+            
             <button type="submit" class="login-btn">
                 MASUK
             </button>
